@@ -44,7 +44,7 @@ Here is an example of an advanced HTTP response that combines the name, nutrient
 ## Wireframes
 
 ![image](fork-and-co-wireframe.png)
-This wireframe representation of Fork + Co. can be found at: https://wireframe.cc/ubTlr7).
+This wireframe representation of Fork + Co. can be found at: https://wireframe.cc/ubTlr7.
 
 ## MVP 
 
