@@ -43,7 +43,7 @@ Here is an example of an advanced HTTP response that combines the name, nutrient
 
 ## Wireframes
 
-![image](https://wireframe.cc/ubTlr7)
+![image]()<!---https://wireframe.cc/ubTlr7--->
 
 ## MVP 
 
