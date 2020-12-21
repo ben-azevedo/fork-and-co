@@ -80,7 +80,7 @@ Include a full list of features that have been prioritized based on the `Time an
 ### Timeframes
 
 | Component | Priority | Estimated Time | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
+| --- | :---: |  :---: | :---: |
 | Pseudocode | H | 0.5hrs | N/A |
 | Name, Nutrient, and Ingredient Searches | H | 4hrs | N/A |
 | Rank Recipes by score | H | 3hrs | N/A |
