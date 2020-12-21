@@ -10,11 +10,11 @@ Use this section to describe your final project and perhaps any links to relevan
 
 ## API and Data Sample
 
-This project was built-out using spoonacular API, which can be found here: https://spoonacular.com/food-api. This particular API allows for three different types of recipe searches by: 
-- Food name: https://api.spoonacular.com/recipes/complexSearch?query={foodName}
-- Nutrients involved: https://api.spoonacular.com/recipes/findByNutrients?{nutrientsInvolved}
-- Ingredients used: https://api.spoonacular.com/recipes/findByIngredients?ingredients={ingredientsUsed}
-And to retrieve the actual recipes and ingredient list of each response requires an additional call to the API (https://api.spoonacular.com/recipes/{id}/information).
+This project was built-out using spoonacular API, which can be found here: https://spoonacular.com/food-api. For this project, the four main HTTP requests being sent to the spoonacular API include:
+- Search by Food Name: https://api.spoonacular.com/recipes/complexSearch?query={foodName}
+- Search by Nutrients Involved: https://api.spoonacular.com/recipes/findByNutrients?{nutrientsInvolved}
+- Search by Ingredients Used: https://api.spoonacular.com/recipes/findByIngredients?ingredients={ingredientsUsed}
+- Recipe by Food ID: https://api.spoonacular.com/recipes/{id}/information
 
 Here is an example of an advanced HTTP response that combines the name, nutrients, and ingredients searches for the request of (```name = pasta, maxFat = 25```) https://api.spoonacular.com/recipes/complexSearch?query=pasta&maxFat=25&number=2:
 ```
