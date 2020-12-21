@@ -11,7 +11,7 @@ Use this section to describe your final project and perhaps any links to relevan
 ## API and Data Sample
 
 This project was built-out using spoonacular API, which can be found here: https://spoonacular.com/food-api. For this project, the four main HTTP requests being sent to the spoonacular API include:
-- Search by Food Name: https://api.spoonacular.com/recipes/complexSearch?query={foodName}
+- Search by Food Name: ```GET https://api.spoonacular.com/recipes/complexSearch?query={foodName}```
 - Search by Nutrients Involved: https://api.spoonacular.com/recipes/findByNutrients?{nutrientsInvolved}
 - Search by Ingredients Used: https://api.spoonacular.com/recipes/findByIngredients?ingredients={ingredientsUsed}
 - Recipe by Food ID: https://api.spoonacular.com/recipes/{id}/information
