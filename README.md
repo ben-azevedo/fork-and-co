@@ -43,7 +43,7 @@ Here is an example of an advanced HTTP response that combines the name, nutrient
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+![image](https://wireframe.cc/ubTlr7)
 
 ## MVP 
 
