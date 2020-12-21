@@ -1,10 +1,8 @@
 # Food + Co. Overview
 
-## Description
-
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
-## API and Data Sample
+### API and Data Sample
 
 This project was built-out using spoonacular API, which can be found here: https://spoonacular.com/food-api. For this project, the four main HTTP requests being sent to the spoonacular API include:
 - Search by Food Name: ```GET https://api.spoonacular.com/recipes/complexSearch?query={foodName}```
@@ -43,24 +41,24 @@ Here is an example of an advanced HTTP response that combines the name, nutrient
 }
 ```
 
-## Wireframes
+### Wireframes
 
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
-## MVP 
+### MVP 
 
 - Find and use external api 
 - Render data on page 
 - Allow users to filter their recipe search by name, nutrients, or ingredients
 - Rank recipes by their spoonacular score
 
-## PostMVP  
+### PostMVP  
 
 - Allow users to further filter their results by cuisines, diets, intolerances, etc.
 - Allow users to bookmark recipes found during their browser session
 - Advanced CSS styling and animation
 
-## Project Schedule
+### Project Schedule
 
 This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
 
@@ -77,11 +75,11 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |Dec 25| MVP | Incomplete
 |Jan 5| Presentations | Incomplete
 
-## Priority Matrix
+### Priority Matrix
 
 Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
 
-## Timeframes
+### Timeframes
 
 Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day. Students usally put in around 40+ hours into their project 1.
 
@@ -98,9 +96,9 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Advanced CSS | M | 5hrs | N/A |
 | Total | H | 23.5hrs | N/A |
 
-## Code Snippet
+#3# Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
 
-## Change Log
+### Change Log
  Use this section to document what changes were made and the reasoning behind those changes.  
