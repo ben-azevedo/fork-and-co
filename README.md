@@ -49,12 +49,11 @@ This wireframe representation of Fork + Co. can be found at: https://wireframe.c
 - Make HTTP requests based on food name 
 - Make HTTP requests based on food ID to retrieve recipes
 - Display user food search results and recipes
-- Allow users to filter their recipe search by name, nutrients, or ingredients
-- Rank recipes by their spoonacular score
 
 ## PostMVP  
 
-- Allow users to further filter their results by cuisines, diets, intolerances, etc.
+- Rank recipes by their spoonacular score
+- Allow users to filter their recipe search by nutrients, ingredients, cuisines, diets, intolerances, etc.
 - Allow users to bookmark recipes found during their browser session
 - Advanced CSS styling and animation
 
