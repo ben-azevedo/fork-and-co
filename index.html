@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Fork + Co.</title>
+  <link rel = "icon" href = "fork-and-co-logo-white.png" type = "image/x-icon"> 
+</head>
+<body>
+  <div class="heading">
+    <div class="search">
+      <img class="logo-big" src="fork-and-co-logo.png">
+      <h1 id="company">Fork + Co.</h1>
+      <form class="searchBar">
+        <label for="rSearch">find recipe:</label>
+        <input type="search" id="rSearch" name="rSeach" placeholder="recipe title">
+        <i class="fa fa-search"></i>
+      </form>
+    </div>
+    <!-- <div class="filters">
+      <div class="filter-text-container">
+        <label for="filters">filters:</label>
+      </div>
+      <div class="filters-container">
+        <select name="cuisine" id="cuisine">
+          <option selected="selected">cuisine</option>
+          <option value="american">american</option>
+          <option value="mexican">mexican</option>
+        </select>
+        <select name="ingredient" id="ingredient">
+          <option selected="selected">ingredient</option>
+          <option value="strawberry">strawberry</option>
+        </select>
+        <select name="course" id="course">
+          <option selected="selected">course</option>
+          <option value="entre">entre</option>
+          <option value="desert">desert</option>
+        </select>
+        <select name="diet" id="diet">
+          <option selected="selected">diet</option>
+          <option value="gluten-free">gluten-free</option>
+          <option value="vegan">vegan</option>
+        </select>
+      </div>
+    </div> -->
+  </div>
+  <div class="featured">
+      <h2>Featured Recipes</h2>
+      <h4>handpicked by our staff</h4>
+      <div class="fPhotos">
+        <div class="fImage-left"></div>
+        <div class="fImage-center"></div>
+        <div class="fImage-right"></div>
+      </div>
+      <div class="owl-dots">
+        <button role="button" class="owl-dot active" id="left-dot">
+          <span></span>
+        </button>
+        <button role="button" class="owl-dot" id="center-dot">
+          <span></span>
+        </button>
+        <button role="button" class="owl-dot" id="right-dot">
+          <span></span>
+        </button>
+      </div>
+  </div>
+  <div class="results">
+    <h2>Your results:</h2>
+    <div class="result-container">
+      <div id="one"></div>
+      <div id="two"></div>
+      <div id="three"></div>
+      <div id="four"></div>
+      <div id="five"></div>
+    </div>
+  </div>
+  <div class="footing">
+    <img class="logo-small" src="fork-and-co-logo.png">
+    <h4 id="powered">This website is powered by <a href="https://spoonacular.com/food-api">spoonacular API</a>.</h4>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
