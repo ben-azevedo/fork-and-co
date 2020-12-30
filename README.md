@@ -1,13 +1,11 @@
 # Food + Co. Overview
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Welcome to Food + Co., this is a food/recipe application run by Spoonacular API. Searching for foods based on name, desired nutrients, or ingredients....
 
 ## API and Data Sample
 
 This project was built-out using spoonacular API, which can be found here: https://spoonacular.com/food-api. For this project, the four main HTTP requests being sent to the spoonacular API include:
 - Search by Food Name: ```GET https://api.spoonacular.com/recipes/complexSearch?query={foodName}```
-- Search by Nutrients Involved: ```GET https://api.spoonacular.com/recipes/findByNutrients?{nutrientsInvolved}```
-- Search by Ingredients Used: ```GET https://api.spoonacular.com/recipes/findByIngredients?ingredients={ingredientsUsed}```
 - Recipe by Food ID: ```GET https://api.spoonacular.com/recipes/{id}/information```
 
 Here is an example of an advanced HTTP response that combines the name, nutrients, and ingredients searches for the request of (```name = pasta, maxFat = 25```) ```GET https://api.spoonacular.com/recipes/complexSearch?query=pasta&maxFat=25&number=2```:
@@ -43,24 +41,23 @@ Here is an example of an advanced HTTP response that combines the name, nutrient
 
 ## Wireframes
 
-![image]()<!---https://wireframe.cc/ubTlr7--->
+![image](fork-and-co-wireframe.png)
+This wireframe representation of Fork + Co. can be found at: https://wireframe.cc/ubTlr7.
 
 ## MVP 
 
-- Find and use external api 
-- Render data on page 
-- Allow users to filter their recipe search by name, nutrients, or ingredients
-- Rank recipes by their spoonacular score
+- Make HTTP requests based on food name 
+- Make HTTP requests based on food ID to retrieve recipes
+- Display user food search results and recipes
 
 ## PostMVP  
 
-- Allow users to further filter their results by cuisines, diets, intolerances, etc.
+- Rank recipes by their spoonacular score
+- Allow users to filter their recipe search by nutrients, ingredients, cuisines, diets, intolerances, etc.
 - Allow users to bookmark recipes found during their browser session
 - Advanced CSS styling and animation
 
 ## Project Schedule
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
