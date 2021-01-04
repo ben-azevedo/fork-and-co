@@ -64,7 +64,7 @@ This wireframe representation of Fork + Co. can be found at: https://wireframe.c
 |Dec 21| Prompt / Wireframes / Priority Matrix | Complete
 |Dec 21| Project Approval | Incomplete
 |Dec 21| Pseudocode | Incomplete
-|Dec 22| Name, Nutrient, and Ingredient Searches | Incomplete
+|Dec 22| Search Function | Incomplete
 |Dec 23| Rank Recipes by score | Incomplete
 |Dec 25| Base HTML, CSS, JS | Incomplete
 |Dec 25| MVP | Incomplete
