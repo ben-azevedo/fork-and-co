@@ -101,11 +101,11 @@ function createStars(rating) {
         `;
   } else if (rating > 10 && rating <= 20) {
     return `
-        <span class="full-star"><i class="fa fa-star"></span>
-        <span class="empty-full-star"><i class="fa fa-star-o"></i></span>
-        <span class="empty-full-star"><i class="fa fa-star-o"></i></span>
-        <span class="empty-full-star"><i class="fa fa-star-o"></i></span>
-        <span class="empty-full-star"><i class="fa fa-star-o"></i></span>
+      <span class="full-star"><i class="fa fa-star"></i></span>
+      <span class="empty-full-star"><i class="fa fa-star-o"></i></span>
+      <span class="empty-full-star"><i class="fa fa-star-o"></i></span>
+      <span class="empty-full-star"><i class="fa fa-star-o"></i></span>
+      <span class="empty-full-star"><i class="fa fa-star-o"></i></span>
         `;
   } else if (rating > 20 && rating <= 30) {
     return `
@@ -175,11 +175,19 @@ function createStars(rating) {
 }
 
 function createDiets(details) {
-  let diets = []
-  if (details.vegetarian) { diets.push("Vegetarian"); }
-  if (details.vegan) { diets.push("Vegan"); }
-  if (details.glutenFree) { diets.push("Gluten Free"); }
-  if (details.dairyFree) { diets.push("Dairy Free"); }
+  let diets = [];
+  if (details.vegetarian) {
+    diets.push("Vegetarian");
+  }
+  if (details.vegan) {
+    diets.push("Vegan");
+  }
+  if (details.glutenFree) {
+    diets.push("Gluten Free");
+  }
+  if (details.dairyFree) {
+    diets.push("Dairy Free");
+  }
   let phrase = "";
   if (diets.length === 0) {
     return phrase;
