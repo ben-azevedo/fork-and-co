@@ -62,12 +62,12 @@ This wireframe representation of Fork + Co. can be found at: https://wireframe.c
 |  Day | Deliverable | Status
 |---|---| ---|
 |Dec 21| Prompt / Wireframes / Priority Matrix | Complete
-|Dec 21| Project Approval | Incomplete
-|Dec 21| Pseudocode | Incomplete
-|Dec 22| Search Function | Incomplete
-|Dec 23| Rank Recipes by score | Incomplete
-|Dec 25| Base HTML, CSS, JS | Incomplete
-|Dec 25| MVP | Incomplete
+|Dec 21| Project Approval | Complete
+|Dec 21| Pseudocode | Complete
+|Dec 22| Search Function | Complete
+|Dec 23| Rank Recipes by score | Complete
+|Dec 25| Base HTML, CSS, JS | Complete
+|Dec 25| MVP | Complete
 |Jan 5| Presentations | Incomplete
 
 ## Priority Matrix
@@ -78,14 +78,14 @@ This wireframe representation of Fork + Co. can be found at: https://wireframe.c
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
-| Pseudocode | H | 0.5hrs | N/A |
-| Name, Nutrient, and Ingredient Searches | H | 4hrs | N/A |
-| Rank Recipes by score | H | 3hrs | N/A |
-| Base HTML, CSS, JS | H | 6hrs | N/A |
-| Further Search Filtering | L | 4hrs | N/A |
+| Pseudocode | H | 0.5hrs | 0.5hrs |
+| Basic Search | H | 4hrs | 1hr |
+| Rank Recipes by score | H | 3hrs | 5hrs |
+| Base HTML, CSS, JS | H | 6hrs | 12hrs |
+| Nutrient, Ingredient and Further Search Filtering | L | 4hrs | N/A |
 | Bookmarking Feature | L | 1hr | N/A |
-| Advanced CSS | M | 5hrs | N/A |
-| Total | H | 23.5hrs | N/A |
+| Advanced CSS | M | 5hrs | 3hrs |
+| Total | H | 23.5hrs | 21.5hrs |
 
 ## Code Snippet
 
