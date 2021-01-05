@@ -80,12 +80,12 @@ This wireframe representation of Fork + Co. can be found at: https://wireframe.c
 | --- | :---: |  :---: | :---: |
 | Pseudocode | H | 0.5hrs | 0.5hrs |
 | Basic Search | H | 4hrs | 1hr |
-| Rank Recipes by score | H | 3hrs | 5hrs |
-| Base HTML, CSS, JS | H | 6hrs | 12hrs |
+| Rank Recipes by score | H | 3hrs | 3hrs |
+| Base HTML, CSS, JS | H | 6hrs | 4hrs |
 | Nutrient, Ingredient and Further Search Filtering | L | 4hrs | N/A |
 | Bookmarking Feature | L | 1hr | N/A |
-| Advanced CSS | M | 5hrs | 3hrs |
-| Total | H | 23.5hrs | 21.5hrs |
+| Advanced CSS | M | 5hrs | 4hrs |
+| Total | H | 23.5hrs | 18.5hrs |
 
 ## Code Snippet
 
