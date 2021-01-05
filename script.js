@@ -1,10 +1,10 @@
 BEN_AZEVEDO = "5f6e5a8b97614fa0b121a1ed4e27c2e1";
 ESILVA = "cd0dd6cfca0449019ca58094678a2d76";
-API_KEY = ESILVA;
+API_KEY = BEN_AZEVEDO;
 R_SEARCH_URL = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&query=`;
 D_SEARCH_PREFIX = `https://api.spoonacular.com/recipes/`; // id value comes after this URL chunk
 D_SEARCH_SUFFIX = `/information?apiKey=${API_KEY}`; // id value comes before this URL chunk
-NUM_RESULTS = 1;
+NUM_RESULTS = 6;
 // RECIPE_URL = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${API_KEY}`;
 
 // const postmvp = `https://api.spoonacular.com/recipes/search?apiKey=${API_KEY}&query=${term}&number=5&diet=${dietParams}&intolerances=${intoleranceParams}`
@@ -62,19 +62,64 @@ function showResults(result, details) {
   const stars = createStars(parseInt(rating));
   const diets = createDiets(details.data);
   const newItem = `
-      <div id="profile-${id}" class="result">
+      <div id="profile${id}" class="result">
         <img class="result-image" src="${image}">
         <div class="result-title">${title}</div>
         <div class="time-diet">
           <div class="time">
             <div><i class="fa fa-clock-o"></i> ${details.data.readyInMinutes} minutes</div>
           </div>
-          <div class="diet">${diets}</div>
+          <div class="diet">Diets: ${diets}</div>
         </div>
         <div class="source">Source: ${details.data.sourceName}</div>
         <div class="rating">${stars}</div>
-        <div class="modal">
-      </div></div>`;
+      </div>
+
+      <div id="modal${id}" class="modal">
+        <div class="modal-content">
+          <span id="close${id}">&times;</span>
+          <p>${id} ${title} modal</p>
+        </div>
+      </div>`;
+
+  const modalJS = `
+    const modal${id} = document.getElementById("modal${id}");
+  
+    const btn${id} = document.getElementById("profile${id}");
+
+    const span${id} = document.getElementById("close${id}")[0];
+
+    btn${id}.onclick = function() {
+      modal${id}.style.display = "block";
+      console.log("${title} was pressed");
+    }
+
+    span${id}.onclick = function() {
+      modal${id}.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal${id}) {
+        modal${id}.style.display = "none";
+      }
+    }`;
+
+  const modalStyle = `
+    #modal${id} {
+      display: none;
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0); /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    }
+    `;
+
   const recipeInfo = `
       const trigger${id} = document.getElementById("${id}");
       document.querySelector("#${id}").addEventListener("click", (e) => {
@@ -86,6 +131,13 @@ function showResults(result, details) {
   document
     .querySelector(".result-container")
     .insertAdjacentHTML("beforeend", newItem);
+  document
+    .querySelector("#javascript")
+    .insertAdjacentHTML("beforeend", modalJS);
+  document.querySelector("style").insertAdjacentHTML("beforeend", modalStyle);
+  console.log(document.querySelector("#javascript"));
+  console.log(document.querySelector("style"));
+  console.log(document.querySelector("body"));
 }
 
 function createStars(rating) {
@@ -190,7 +242,7 @@ function createDiets(details) {
   }
   let phrase = "";
   if (diets.length === 0) {
-    return phrase;
+    return "None";
   } else if (diets.length === 1) {
     return diets[0];
   } else {

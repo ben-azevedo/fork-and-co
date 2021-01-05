@@ -1,11 +1,25 @@
 :root {
   --resultWidth: 280px;
-  --resultPadding: 0px;
-  --resultImage: calc(var(--resultWidth) - (var(--resultPadding) * 2));
+  --resultPadding: 5px;
+  --resultImage: calc(var(--resultWidth) - 5px - (var(--resultPadding) * 2));
 }
 
 * {
   box-sizing: border-box;
+}
+
+.homepage {
+  background-image: url(lines2.jpeg);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo-biggest {
+  height: 60vh;
+  right: 10vw;
+  top: 10vh;
+  position: fixed;
 }
 
 body {
@@ -14,10 +28,11 @@ body {
 
 
 .search {
-  border: 3px black solid;
+  border-bottom: 3px black solid;
   height: 145px;
   /* display: flex;
   flex-wrap: wrap; */
+  background-image: url(seamlessWave.png);
 }
 
 .logo-big {
@@ -37,6 +52,7 @@ body {
   position: absolute;
   right: 30px;
   top: 70px;
+  font-weight: bold;
 }
 
 @media (max-width: 500px) {
@@ -57,38 +73,84 @@ body {
   display: inline-block;
 }
 
+.featured {
+  text-align: center;
+}
+
+.featured h4 {
+  margin-top: -15px;
+}
+
+.yourResults {
+  margin-top: 60px;
+  padding-left: 20px;
+}
+
 .result-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  border: 2px red solid;
+  /* border: 2px red solid; */
   justify-content: space-around;
 }
 
 .result-image {
-  border: 1px indigo solid;
-  border-radius: 5%;
+  /* border: 1px indigo solid; */
+  border-radius: 17% 17% 0 0;
   width: var(--resultImage);
 }
 
+.fake-result-image {
+  width: var(--resultImage);
+  height: calc(var(--resultImage) - 20px);
+  border-radius: 17% 17% 0 0;
+  background: darkgray;
+}
+
 .result {
-  border: 1px limegreen solid;
+  border: 2px black solid;
+  border-radius: 15% 15% 15% 2%;
   width: var(--resultWidth);
   margin: 15px;
   padding: var(--resultPadding);
 }
 
+.fake-result {
+  background: lightgray;
+  margin: 15px;
+  border-radius: 15% 15% 15% 2%;
+}
+
+.fake-filler {
+  height: 100px;
+}
+
 .result-title {
   margin-top: -5px;
-  border: 1px blue solid;
+  /* border: 1px blue solid; */
+  font-size: 20px;
+  font-weight: bold;
+  padding: 3px 0px 0px 1px;
 }
 
 .time {
-  border: 1px red solid;
+  /* border: 1px red solid; */
+  padding: 2px 0px 0px 1px;
+  font-size: 18px;
+}
+
+.diet, .source {
+  padding: 2px 0px 0px 1px;
+  font-style: italic;
+  font-size: 17px;
+}
+
+.rating {
+  padding: 5px 0px 0px 1px;
 }
 
 .fa-clock-o {
-  border: 1px purple solid;
+  /* border: 1px purple solid; */
 }
 
 /* Purple/Green Color scheme
@@ -98,23 +160,8 @@ Independence 5A5766
 Independence 48435C
 Maximum Blue Purple 9792E3 */
 
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-
 .modal-content {
   background-color: #fefefe;
-  border-radius: 10%;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -141,8 +188,9 @@ Maximum Blue Purple 9792E3 */
 }
 
 .footing {
-  border: 3px solid black;
-  background-color: #EDFFEC;
+  margin-top: 30px;
+  border-top: 3px solid black;
+  background-image: url(seamlessWave.png);
   position: relative;
   bottom: 0;
   width: 100vw;
@@ -160,7 +208,7 @@ Maximum Blue Purple 9792E3 */
   text-align: center;
 }
 
-#one, #two, #three, #four, #five {
+/* #one, #two, #three, #four, #five {
   height: 100px;
   width: 100vw;
 }
@@ -188,7 +236,7 @@ Maximum Blue Purple 9792E3 */
 #five {
   background: #9792E3;
   border: 1px black solid;
-}
+} */
 
 /* Purple/Green Color scheme
 Honeydew EDFFEC
