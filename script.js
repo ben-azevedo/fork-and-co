@@ -4,7 +4,7 @@ API_KEY = BEN_AZEVEDO;
 R_SEARCH_URL = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&query=`;
 D_SEARCH_PREFIX = `https://api.spoonacular.com/recipes/`; // id value comes after this URL chunk
 D_SEARCH_SUFFIX = `/information?apiKey=${API_KEY}`; // id value comes before this URL chunk
-NUM_RESULTS = 6;
+NUM_RESULTS = 12;
 // RECIPE_URL = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${API_KEY}`;
 
 // const postmvp = `https://api.spoonacular.com/recipes/search?apiKey=${API_KEY}&query=${term}&number=5&diet=${dietParams}&intolerances=${intoleranceParams}`
