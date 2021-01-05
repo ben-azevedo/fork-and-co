@@ -8,30 +8,56 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .homepage {
-  background-image: url(lines2.jpeg);
+  background-image: url(seamlessWave.png);
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
 }
 
 .logo-biggest {
-  height: 60vh;
-  right: 10vw;
-  top: 10vh;
+  height: calc(100vw / 4);
+  left: 40%;
+  top: calc(100vh / 7);
   position: fixed;
+}
+
+#home-company {
+  position: fixed;
+  left: 20%;
+  top: calc(100vh / 3);
+  font-size: calc(100vw / 8);
+}
+
+.getStarted {
+  position: fixed;
+  left: 35%;
+  top: calc(100vh / 1.4);
+  font-size: calc(100vw / 20);
+  padding: 10px;
+  border-radius: 20%;
+  display: flexbox;
+  border: red 2px solid;
+  justify-content: center;
+}
+
+.getStarted:hover {
+  color: red;
+  transition: 0.5s;
 }
 
 body {
   margin: 0 auto;
 }
 
-
 .search {
   border-bottom: 3px black solid;
   height: 145px;
-  /* display: flex;
-  flex-wrap: wrap; */
   background-image: url(seamlessWave.png);
 }
 
@@ -55,24 +81,6 @@ body {
   font-weight: bold;
 }
 
-@media (max-width: 500px) {
-  .owl-dots {
-    bottom: 20px;
-  }
-}
-
-.owl-dots {
-  text-align: center;
-  margin-top: 0px;
-  position: absolute;
-  /* width: 100%; */
-  left: 50%;
-}
-
-.owl-dots .owl-dot {
-  display: inline-block;
-}
-
 .featured {
   text-align: center;
 }
@@ -81,12 +89,19 @@ body {
   margin-top: -15px;
 }
 
+.featured img {
+  height: 345px;
+  width: 265px;
+  border-radius: 15% 15% 15% 2%;
+  border: 1px darkgray solid;
+}
+
 .yourResults {
   margin-top: 60px;
   padding-left: 20px;
 }
 
-.result-container {
+.feature-result-container, .result-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -139,7 +154,8 @@ body {
   font-size: 18px;
 }
 
-.diet, .source {
+.diet,
+.source {
   padding: 2px 0px 0px 1px;
   font-style: italic;
   font-size: 17px;
@@ -152,13 +168,6 @@ body {
 .fa-clock-o {
   /* border: 1px purple solid; */
 }
-
-/* Purple/Green Color scheme
-Honeydew EDFFEC
-Light Green 61E786
-Independence 5A5766
-Independence 48435C
-Maximum Blue Purple 9792E3 */
 
 .modal-content {
   background-color: #fefefe;
@@ -208,39 +217,28 @@ Maximum Blue Purple 9792E3 */
   text-align: center;
 }
 
-/* #one, #two, #three, #four, #five {
-  height: 100px;
-  width: 100vw;
+@media (max-width: 600px) {
+  .logo-big {
+    display: none;
+  }
+
+  #company {
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    left: 35%;
+  }
+
+  .search {
+    border-bottom: 3px black solid;
+  }
+
+  .searchBar {
+    font-weight: bold;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    top: 95px;
+    left: 10px;
+  }
 }
-
-#one {
-  background: #EDFFEC;
-  border: 1px black solid;
-}
-
-#two {
-  background: #61E786;
-  border: 1px black solid;
-}
-
-#three {
-  background: #5A5766;
-  border: 1px black solid;
-}
-
-#four {
-  background: #48435C;
-  border: 1px black solid;
-}
-
-#five {
-  background: #9792E3;
-  border: 1px black solid;
-} */
-
-/* Purple/Green Color scheme
-Honeydew EDFFEC
-Light Green 61E786
-Independence 5A5766
-Independence 48435C
-Maximum Blue Purple 9792E3 */

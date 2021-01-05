@@ -42,6 +42,7 @@ async function fetchFood(food) {
   }
 }
 
+// retrieves all details (recipe, nutrition, source, etc.) about food from API
 async function fetchDetails(result) {
   const url = `${D_SEARCH_PREFIX}${result.id}${D_SEARCH_SUFFIX}`;
   try {
@@ -53,6 +54,7 @@ async function fetchDetails(result) {
   }
 }
 
+// creates search result HTML elements to populate web page
 function showResults(result, details) {
   let id = result.id;
   let image = result.image;
@@ -61,7 +63,7 @@ function showResults(result, details) {
   console.log(rating);
   const stars = createStars(parseInt(rating));
   const diets = createDiets(details.data);
-  const newItem = `
+  const newItem = `<a href="${details.data.sourceUrl}">
       <div id="profile${id}" class="result">
         <img class="result-image" src="${image}">
         <div class="result-title">${title}</div>
@@ -73,7 +75,7 @@ function showResults(result, details) {
         </div>
         <div class="source">Source: ${details.data.sourceName}</div>
         <div class="rating">${stars}</div>
-      </div>
+      </div></a>
 
       <div id="modal${id}" class="modal">
         <div class="modal-content">
@@ -140,6 +142,7 @@ function showResults(result, details) {
   console.log(document.querySelector("body"));
 }
 
+// creates star rating graphic based on spoonacular score (0-100)
 function createStars(rating) {
   console.log(typeof rating);
   console.log(`the rating is ${rating}`);
@@ -226,6 +229,7 @@ function createStars(rating) {
   }
 }
 
+// create HTML innertext for the types of diets each result supports
 function createDiets(details) {
   let diets = [];
   if (details.vegetarian) {
